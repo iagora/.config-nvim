@@ -1,5 +1,7 @@
 local lsp = require("lsp-zero")
 
+require'lspconfig'.ocamllsp.setup{}
+
 lsp.preset("recommended")
 
 lsp.ensure_installed({
